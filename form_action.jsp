@@ -7,6 +7,8 @@
 서버 포트:<%=request.getServerPort()%><br/>
 컨텍스트경로:<%=request.getContextPath()%><br/>
 클라이언트주소:<%=request.getRemoteAddr()%><br/>
-요청 프로토톨:<%=request.getMethod()%><br/>
+요청 프로토톨:<%=request.getProtocol()%><br/>
+요청 방식: <%=request.getMethod()%><br/>
+질의 내용: <%=request.getQueryString()%><br/>
 </body>
 </html>
