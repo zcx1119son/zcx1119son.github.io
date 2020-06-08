@@ -3,9 +3,11 @@
 <meta name="viewport" content="width=device-width, initial-sclae=1"/>
 <style> *{box-sizing:border-box; padding:0; margin:0;} 
 .row::after{content:""; clear:both; display:table;} 
-.col-1{width:49%;} .col-2{width:32.5%;} .col-3{width:30%;} .col-4{width:68%;}
 [class*="col-"]{float:left; padding:10px; height:200px;} li{list-style-type:none;} .header, .footer {border:2px solid #3AEBCC; border-radius:1em; padding:10px; text-align:center;}
 .name{display:inline-block; margin:5px; border:2px solid #3AEBCC; padding-left:10px; text-align:left;} .menu li img {height:200px; vertical-align:top;}
+[class*="col-"]{width;100%;}
+@media only screen and(min-width:600px){.col-t-1{width:49%;} .col-t-2{width:32.5%;} .col-t-3{width:30%;} .col-t-4{width:68%;}}
+@media only screen and(min-width:768px){.col-1{width:49%;} .col-2{width:32.5%;} .col-3{width:30%;} .col-4{width:68%;}}
 </style><title>20171379 엄정민의 포트폴리오</title></head>
 <body><header class="header"><h2>도전해보자 그건 내 경험이다.</h2></header>
 <div class="row"></div>
