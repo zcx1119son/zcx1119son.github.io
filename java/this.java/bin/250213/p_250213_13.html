@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>연습13</title>
+      <Style>
+       th, td{
+            border-style: double;
+        }  
+        th{
+            text-align: center;      
+        }
+      </Style>
+    </head>
+        
+    <bady>
+     <table>
+        <caption><h2>행 통합 테이블</h2></caption>
+        <col style="width: 80px;">
+        <col style="width: 160px;"> 
+        <tr>
+            <th>1행</th>
+            <td colspan="2">1행 1열</td>
+        </tr>
+        <tr>
+            <th rowspan="2">2행</th>
+            <td colspan="2">2행 2열</td>
+        </tr>
+        <tr>
+            <td colspan="2">3행 2열</td>
+        </tr>
+     </table>
+     <table>
+        <caption><h2>열 통합 테이블</h2></caption>
+        <col style="width: 80px;">
+        <colgroup span="2" style="width: 80px;"> 
+        <tr>
+            <th>1행</th>
+            <th colspan="2">2열</th>
+        </tr>
+        <tr>
+            <td>2행 1열</td>
+            <td>2행 2열</td>
+            <td>2행 3열</td>
+        </tr>
+     </table>
+    </bady>
+</html>

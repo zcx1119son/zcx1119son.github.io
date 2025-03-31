@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>이벤트</title>
+    </head>
+    
+    <bady>
+      <!-- <button onclick="clickEvent()">클릭</button>
+      <script>
+        function clickEvent(){
+            alert("click");
+        }
+      </script> -->
+      <!-- <form>
+        <input typ="text" onfocus="focusEvent()" onblur="blurEvent()">
+      </form>
+      <script>
+        function focusEvent(){
+            console.log("focus on");
+        }
+        function blurEvent(){
+            console.log("focus out");
+        }
+      </script> -->
+      <button>클릭</button>
+      <script>
+        // const btnE1=document.querySelector("button");
+        // btnE1.onclick=function(){
+        //     alert("click");
+        // }
+        // const btnE1=document.querySelector("button");
+        // btnE1.onclick=()=>{
+        //     alert("arrow click");
+        // }
+            // const btnE1=document.querySelector("button");
+            // btnE1.onclick=clickEvent;
+            // function clickEvent(){
+            //     alert("click");
+            // }
+            // const btnE1=document.querySelector("button");
+            // btnE1.addEventListener("click", function(){
+            //     alert("button click");
+            // })
+            const btnE1=document.querySelector("button");
+            const clickEvent=()=>{
+                alert("button Click");
+            }
+            btnE1.addEventListener("click", clickEvent);
+        </script>
+    </bady>
+</html>

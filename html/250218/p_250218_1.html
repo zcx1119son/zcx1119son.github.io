@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>연습1</title>
+        <style>
+           #center1{
+                width:450px;
+                margin: auto;
+            }
+            .box1{
+                width:450px;
+                height:500px;
+                background-color: rgb(22,1,49);
+                border: 1px solid black;
+                padding: 5px;
+                display: flex;
+                flex-direction: column;
+            }
+            .box2{
+                width: 420px;
+                height: 50px;
+                margin: auto;
+                color: white;
+                text-align: center;
+                line-height: 50px;
+            }
+            .box3{
+                width:210px;
+                height: 50px;
+                line-height: 50px;
+                float: left;
+            }
+            .box4{
+                width:400px;
+                height: 50px;
+                background-color: rgb(114,2,170);  
+                margin: auto;
+                color: white;
+                line-height: 0px;
+                font-size: 15px;
+                text-align: center;
+            }
+            .box5{
+                width:300px;
+                height: 50px;
+                margin: auto;
+                font-size: 22px;
+            }
+            
+            .puple-box{
+                background-color: rgb(114,2,170);      
+            }
+            .gray-box{
+                background-color: rgb(64,71,68);
+            }
+            input{
+                border-color: white;
+                background-color: rgb(1,33,49);
+                width: 380px;
+                height: 30px;
+                color: white;
+                padding-left: 20px;
+            }
+        </style>
+    </head>
+    
+    <bady>
+        <div id="center1">
+            <div class="box1">
+                <div class="box2">
+                    <div class="box3 puple-box" onclick='location.href="p_250218_1.html"'>
+                        회원 가입
+                    </div>
+                    <div class="box3 gray-box" onclick='location.href="p_250218_2.html"'>
+                        로그인
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="box5">
+                        무료 회원 가입
+                    </div>
+                </div>
+                <div class="box2">
+                    <label for="EmailAddress">
+                        <input type="text" id="EmailAddress"  placeholder="EmailAddress*">
+                    </label>
+                </div>
+                <div class="box2">
+                    <label for="Password">
+                        <input type="password" id="Password"  placeholder="Password*">
+                    </label>
+                </div>
+                <div class="box2">
+                    <label for="ConfirmAPassword">
+                        <input type="password" id="ConfirmAPassword" placeholder="Confirm A Password*">
+                    </label>
+                </div>   
+                    <div class="box4">
+                        <h2>JOIN</h2>
+                    </div>
+            </div>
+        </div>
+    </bady>
+</html>

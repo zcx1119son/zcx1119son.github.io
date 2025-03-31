@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>노드 연습하기</title>
+        <style>
+            .active1{
+                color: red;
+            }
+            .active2{
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    
+    <body>
+     <h1 id="idx">아이디 선택</h1>
+     <p class="classx">클래스 선택</p>
+     <h2>태그 선택</h2>
+     <div class="box1">
+        <p class="text">box1첫번째자식노드입니다.</p>
+        <p class="text">box1두번째자식노드입니다.</p>
+     </div>
+     <div class="box2">
+        <p class="text">box2첫번째자식노드입니다.</p>
+        <p class="text">box2두번째자식노드입니다.</p>
+     </div>
+     <p id="title1">Hello, <span style="display: none;">Doooly</span></p>
+     <p id="textContent1"></p>
+     <p id="innerText1"></p>
+     <p id="innerHTML1"></p>
+     <p id="text1">자바스크립트로 속성 조작</p>
+    <script>
+        const el1=document.getElementById("idx");
+        const el2=document.getElementsByClassName("classx");
+        const el3=document.getElementsByTagName("h2");
+
+        console.log(`아이디노드 선택 : ${el1}`);
+        console.log(`클래스노드 선택 : ${el2}`);
+        console.log(`태그노드 선택 : ${el3}`);
+
+        const el4=document.querySelector(".box1");
+        const el5=document.getElementsByClassName("box1")[0].children;
+        const el6=document.getElementsByClassName("box1")[1].children;
+        const el7=document.querySelectorAll(".box2 .text");
+
+        console.log(document.getElementById("title1").textContent);
+        console.log(document.getElementById("title1").innerText);
+        console.log(document.getElementById("title1").innerHTML);
+        document.getElementById("textContent1").textContent="<strong>요소노드의 모든 텍스트에 접근합니다.</strong>";
+        document.getElementById("innerText1").innerText="<strong>요소 노드의 텍스트 중 웹 브라우저에 표시되는 텍스트에만 접근합니다.</strong>";
+        document.getElementById("innerHTML1").innerHTML="<strong>요소 노드의 텍스트 중 HTML 태그를 포함한 텍스트에만 접근합니다.</strong>";
+        const el8=document.querySelector("#text1");
+        el8.classList.add("active1");
+        el8.classList.add("active2");
+        </script>
+    </body>
+</html>

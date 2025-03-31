@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>attribute</title>
+    </head>
+    
+    <body>
+       <form name="frm1">
+        <label for="uname">이름</label>
+        <input type="text" id="uname" name="uname" value="둘리"><br>
+        <label for="password">비밀번호</label>
+        <input type="password" id="password" name="password" value="1234"><br>
+        <label for="age">나이</label>
+        <input type="text" id="age" name="age" value="100000000"><br>
+        <textarea name="story">둘리와 도우너는 친구입니다. 둘리는 또치와도 친구입니다.
+        </textarea><br>
+        <h2>좋아하는 과일</h2>
+        <label>
+            <input type="checkbox" name="fruit" value="apple">사과</label>
+            <input type="checkbox" name="fruit" value="banana">바나나</label>
+            <input type="checkbox" name="fruit" value="strawberry"checked>딸기</label>
+            <input type="checkbox" name="fruit" value="mango" checked>망고</label>
+            <input type="checkbox" name="fruit" value="orange">오렌지</label><br>
+        <h2>둘리야, 넌 뭐가 젤 싫어?</h2>
+        <label>
+            <input type="radio" name="hate" value="길동이" checked>길동이한테 혼나는 것</label>
+            <input type="radio" name="fruit" value="도우너">도우너가 난폭하게 행동하는 것</label>
+            <input type="radio" name="fruit" value="밥">밥 못먹을때</label><br>
+        <label for="gender">성별</label>
+        <select id="gender" name="gender">
+            <option value="male">남자</option>
+            <option value="female" selected>여자</option>
+            <option value="not">상관하지마</option>
+        </select>
+        <input TYPE="file" name="uploadFile"><br>
+        <button type="submit">전송</button>
+       </form>
+       <script>
+        //    console.log(`이름:${document,frm1.uname.value}`);
+        //    console.log(`비밀번호:${document,frm1.password.value}`);
+        //    console.log(`나이:${document,frm1.age.value}`);
+        //    document.frm1.uname.value="도우너";
+        //    document.frm1.age.value="7";
+        //    console.log(`이름:${document,frm1.uname.value}`);
+        //    console.log(`비밀번호:${document,frm1.password.value}`);
+        //    console.log(`나이:${document,frm1.age.value}`);
+        //    console.log(`나이:${document.frm1.story.value}`);
+        //    document.frm1.story.value='안녕 둘리';
+        //   console.log(`textarea:${document.frm1.story.value}`);
+            // console.log(document.frm1.fruit[0].value);
+            // const cEl1s = document.querySelectorAll("[type='checkbox']");
+            // for(let i=0; i<cEl1s.length; i++){
+            //     // if(cEl1s[i].checked){
+            //     //     console.log(`선택한 과일:${cEl1s[i].value}`);
+            //     // }
+            //     if(cEl1s[i].checked){
+            //         cEl1s[i].checked=false;
+            //     }else
+            //         cEl1s[i].checked=true;
+            // }
+            // const cEls=document.querySelector("[type='radio']");
+            // for(let i=0; i<cEls.length; i++){
+            //     if(cEls[i].checked){
+            //         console.log(`이게 젤 싫어:${cEls[i].value}`);
+            //     }
+            // }
+            // for(let i=0; i<cEl1s.length; i++){
+            //     cEls[i].checked=true;
+            // }
+            // const cEl1s=document.querySelectorAll('option');
+            // for(let i=0; i<cEl1s.length; i++){
+            //     console.log(cEl1s[i].value);
+            //     console.log(cEl1s[i].selected);
+            // }
+            // console.log(document.frm1.geder.value);
+            // for(i=0; i<cEl1s.length; i++){
+            //     if(cEl1s[i].value==="male"){
+            //         cEl1s[i].selected=true;
+            //     }
+            // }
+        const fileObj=document.frm1.uploadFile.files;
+        console.log(fileObj);
+       </script>
+    </body>
+</html>
+</html>

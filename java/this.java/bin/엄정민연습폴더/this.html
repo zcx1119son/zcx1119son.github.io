@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>this</title>
+    </head>
+    
+    <bady>
+        <!-- <button>클릭</button>
+        <script>
+            const btnE1=document.querySelector("button");
+            btnE1.addEventListener("click", function(event){
+                console.log(`clientX:${event.clientX}`);
+                console.log(`clientY:${event.clientY}`);
+                console.log(`pageX:${event.pageX}`);
+                console.log(`pageY:${event.pageY}`);
+                console.log(`screenX:${event.screenX}`);
+                console.log(`screenY:${event.screenY}`);
+            })
+        </script> -->
+        <!-- <form>
+            <input typ="text">
+        </form>
+        <script>
+            const inputE1=document.querySelector("input");
+            inputE1.addEventListener("keydown", function(event){
+                console.log(`keyCode:${event.keyCode}`);
+                console.log(`ctrlkey:${event.ctrlKey}`);
+                console.log(`altKey:${event.altKey}`);
+                console.log(`shiftKey:${event.shiftKey}`);
+            })
+        </script> -->
+        <!-- <a href="https://www.naver.com">네이버 이동</a>
+        <a href="https://www.daum.net">다음 이동</a>
+        <script>
+            const aEls=document.querySelectorAll("a");
+            for(let i=0; i<aEls.length; i++){
+                aEls[i].addEventListener("click", function(e){
+                    e.preventDefault();
+                })
+            }
+        </script> -->
+        <p>text-1</p>
+        <p>text-2</p>
+        <p>text-3</p>
+        <!-- <script>
+            const pEls=document.querySelectorAll("p");
+            pEls.forEach((el)=>{
+                el.addEventListener("click", function(){
+                    console.log(this);
+                });
+            })
+        </script> -->
+        <!-- <script>
+            const pEls=document.querySelectorAll("p");
+            pEls.forEach((el)=>{
+                el.addEventListener("click", function(){
+                    if(this.style.color==="red"){
+                        this.style.color="black";
+                    }else{
+                        this.style.color="red";
+                    }
+                });
+            })  
+        </script> -->
+        <!-- <script>
+            const pEls = document.querySelectorAll("p");
+            pEls.forEach((el)=>{
+                el.addEventListener("click", ()=>{
+                    console.log(this);
+                })
+            })
+        </script> -->
+        <script>
+            const pEls=document.querySelectorAll("p");
+            pEls.forEach((el)=>{
+                el.addEventListener("click", (e)=>{
+                    console.log(e.target);
+                });
+            })
+        </script>
+    </bady>
+</html>

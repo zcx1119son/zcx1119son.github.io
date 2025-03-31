@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>node</title>
+    </head>
+    
+    <body>
+        <script>
+            const aE1=document.createElement("a");
+            document.body.appendChild(aE1);
+
+            const tEl=document.createTextNode("다음");
+            document.querySelector("a").appendChild(tEl);
+
+            const hrefAttr=document.createAttribute("href");
+            hrefAttr.value="https://www.daum.net";
+            document.querySelector("a").setAttributeNode(hrfAttr);
+            // aE1.setAttribute("href", "https://www.daum.net");
+        </script>
+    </body>
+</html>

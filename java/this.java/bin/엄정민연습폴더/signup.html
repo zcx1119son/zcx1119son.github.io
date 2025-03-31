@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>회원가입 화면</title>
+        <style>
+            /*웹페이지 안 화면 중앙 정렬 스타일*/
+            #Screencenter{
+                width:500px;
+                margin: auto; 
+            }
+            /*화면 틀 스타일*/
+            .navyBox{
+                width: 500px;
+                height: 550px;
+                border: 1px solid  rgb(68,78,80);
+                background-color: rgb(68,78,80);
+                padding:10px;
+                display: flex;
+                flex-direction: column; 
+            }
+            /*회원가입, 로그인 버튼 중앙 정렬 스타일*/
+            .headerBox{
+                width: 480px;
+                height: 50px;
+                margin: auto;
+            }
+            
+            /*회원가입, 로그인 버튼 공통 스타일*/
+            .commonButton{
+                width:240px;
+                height: 50px;
+                margin: auto;
+                color: white;
+                text-align: center;
+                line-height: 50px;
+                float: left;
+            }
+            /*연두색 버튼 스타일*/
+            .greenButton{
+                background-color: rgb(88,157,129);
+            }
+            /*회색 버튼 스타일*/
+            .grayButton{
+                background-color: rgb(103,114,110);
+            }
+            /*환영 텍스트 스타일*/
+            .textBox{
+                width: 480px;
+                height: 80px;
+                color: white;
+                text-align: center;
+                line-height: 80px;
+                font-size: 30px;
+                margin: auto;
+            }
+            /*입력 텍스트 간격 스타일*/
+            .inputBox{
+                width: 480px;
+                height: 80px;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            /*입력 텍스트 스타일*/
+            input{
+                width: 480px;
+                height: 40px;
+                border: 1px solid white;
+                background-color:  rgb(68,78,80);
+                color: white;
+                
+            }
+            /*입력 버튼*/
+            .inputButton{
+                width: 480px;
+                height: 80px;
+                border : 1px solid rgb(88,157,129);
+                margin: auto;
+                color: white;
+                background-color: rgb(88,157,129);
+                font-size: 45px;
+                text-align: center;
+                line-height: 80px;
+            }
+        </style>
+    </head>
+    
+    <bady>
+        <div id="Screencenter">
+            <div class="navyBox">
+                <div class="headerBox">
+                    <div class="commonButton greenButton" onclick='location.href="signup.html"'>Sign Up</div>
+                    <div class="commonButton grayButton" onclick='location.href="login.html"'>Login In</div>
+                </div>
+                <div class="textBox">Sign Up for Free</div>
+                <div class="inputBox">
+                    <label for="EmailAddress">
+                        <input type="text" id="EmailAddress" placeholder="EmailAddress *">
+                    </label>
+                </div>   
+                <div class="inputBox">
+                    <label for="SetAPassword">
+                        <input type="password" id="SetAPassword" placeholder="Set A Password *">
+                    </label>
+                </div>
+                <div class="inputBox">
+                    <label for="ConFireAPassword">
+                        <input type="password" id="ConFireAPassword" placeholder="ConFire A Password *">
+                    </label>
+                </div>
+                <div class="inputButton">GET STARTED</div>
+            </div>
+        </div>
+    </bady>
+</html>

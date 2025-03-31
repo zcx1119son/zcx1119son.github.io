@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>요소 노드 선택하기</title>
+    </head>
+    
+    <body>
+      <h1 id="title">title</h1>
+      <p class="text">text-1</p>
+      <p class="text">text-2</p>
+      <script>
+        const e1 = document.getElementById("title");
+        console.log(`e1:${e1}`);
+        const classE1=document.getElementsByClassName("title");
+        console.log(`classE1:${classE1}`);
+        console.log(classE1[0]);
+        console.log(classE1[1]);
+
+        const tagE1=document.getElementsByTagName(p);
+        console.log(`tagE1:${tagE1}`);
+      </script>
+    </body>
+</html>

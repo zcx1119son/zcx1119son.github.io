@@ -1,0 +1,6 @@
+select * from book;
+select bookid, bookname, publisher, price
+from book;
+select * from customer;
+
+select orderid from orders;

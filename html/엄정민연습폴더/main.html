@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>초기화면</title>
+        <style>
+            /*웹페이지 안 화면 중앙 정렬 스타일*/
+            #Screencenter{
+                width:500px;
+                margin: auto; 
+            }
+            /*화면 틀 스타일*/
+            .navyBox{
+                width: 500px;
+                height: 550px;
+                border: 1px solid  rgb(68,78,80);
+                background-color: rgb(68,78,80);
+                padding:10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+            .textMessage{
+                width: 450px;
+                height: 80px;
+                border-radius: 30px;
+                margin: auto;
+                color:rgb(68,78,80);
+                text-align: center;
+                line-height: 80px;
+                font-size: 30px;
+                animation: ani;
+                animation-duration: 3s;
+                animation-fill-mode: both;
+            }
+            /*3초동안 서서히 등장*/
+            @keyframes ani{
+                100%{background-color: rgb(88,157,129);  color: white;}
+            }
+            /*로그인창으로 돌아가기*/
+            .logOutDiv{
+                width: 500px;
+                height: 80px;
+                
+                text-align: center;
+                line-height: 80px;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+    
+    <bady>
+        <div id="Screencenter">
+            <div class="navyBox">
+                <div class="textMessage">Welcome to Webpage!</div>
+                <div class="logOutDiv"><a href="login.html" target="_blank", >로그아웃</a></div>
+            </div>
+            
+        </div>
+    </bady>
+</html>

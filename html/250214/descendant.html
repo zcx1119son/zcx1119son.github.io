@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>하위 선택자(child selector)</title>
+        <style>
+            div p{
+                color: red;
+            }
+        </style>
+    </head>
+    
+    <bady>
+        <div>
+            <p>lorem 1</p>
+            <ul>
+                <li>
+                    <p>lorem 2</p>
+                </li>
+                <li>
+                    <p>div - ul - li - p</p>
+                </li>
+                <li>
+                    <h2>div - ul - li - h2</h2>
+                </li>
+            </ul>
+            <h1>div - h1</h1>
+        </div>
+        <p>lorem 4</p>
+    </bady>
+</html>

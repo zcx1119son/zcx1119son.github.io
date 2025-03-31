@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>remove</title>
+    </head>
+    
+    <body>
+        <p>Dooly</p>
+        <a href="https://www.gilbut.co.kr">길업</a>
+        <a href="https://www.daum.net/">다음</a>
+        <script>
+            // const pEl=document.querySelector("p");
+            // pEl.parentNode.removeChild(pEl);
+
+            const childNodes=document.body.childNodes;
+            childNodes.forEach((node)=>{
+                if(node.nodeName==='A')
+                    node.parentNode.removeChild(node);
+            
+                if(node.nodeName==='p'){
+                    node.parentNode.removeChild(node);
+                }
+            })
+        </script>
+    </body>
+</html>

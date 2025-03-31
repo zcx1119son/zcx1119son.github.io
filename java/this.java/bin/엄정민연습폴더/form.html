@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>클래스 선택자</title>
+    </head>
+    
+    <bady>
+        <!-- <form name="'frm1">
+            <input type="text">
+        </form>
+        <form name="'frm2">
+            <input type="text">
+        </form>
+        <form name="'frm3">
+            <input type="text">
+        </form>
+        <script>
+            document.frm1;
+            document.frm2;
+            document.frm3;
+        </script> -->
+        <!-- <form name="frm1">
+            <label for="uname">이름</label>
+            <input type="text" id="uname" name="uname">
+            <label for="age">나이</label>
+            <input type="text" id="age" name="age">
+            <label for="gender">성별</label>
+            <select id="gender" name="gender">
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select>
+            <button type="submit">전송</button>
+        </form>
+        <script>
+            document.frm1.uname;
+            document.frm1.age;
+            document.frm1[0].gender;
+        </script> -->
+        <!-- <form name="frm">
+            <input type="text" name="id">
+            <input type="password" name="pw">
+        </form>
+        <script>
+            document.frm.id.value="jscoding";
+            document.frm.pw.value="aaaccc";
+        </script> -->
+        <!-- <form name="frm">
+            <textarea name="desc"></textarea>
+        </form>
+        <script>
+            document.frm.desc.value='setting!';
+        </script> -->
+        <!-- <form>
+            <label><input type="checkbox" value="apple">사과</label>
+            <label><input type="checkbox" value="banana">바나나</label>
+            <label><input type="checkbox" value="orange">오렌지</label>
+            <label><input type="checkbox" value="melon" >멜론</label>
+        </form>
+        <script>
+            const checkboxEls=document.querySelectorAll("[type='checkbox']");
+            for(let i=0; i<checkboxEls.length; i++){
+               checkboxEls[i].checked=true;
+            }
+        </script> -->
+        <!-- <form>
+            <label><input type="radio" name="fruits" value="apple">사과</label>
+            <label><input type="radio" name="fruits" value="banana">바나나</label>
+            <label><input type="radio" name="fruits" value="orange">오렌지</label>
+            <label><input type="radio" name="fruits" value="melon">멜론</label>
+        </form>
+        <script>
+            const radioEls=document.querySelectorAll("[type='radio']");
+            for(let i=0; i<radioEls.length; i++){
+                if(radioEls[i].value==='banana'){
+                    radioEls[i].checked=true;
+                }
+            }
+        </script> -->
+        <form>
+            <select>
+                <option value="apple">사과</option>
+                <option value="banana">바나나</option>
+                <option value="orange">오렌지</option>
+                <option value="melon">멜론</option>
+            </select>
+        </form>
+        <script>
+            const optionEls=document.querySelectorAll("option");
+            for(let i=0; i<optionEls.length; i++){
+                if(optionEls[i].value==='banana'){
+                    optionEls[i].selected=true;
+                }
+            }
+        </script>
+    </bady>
+</html>

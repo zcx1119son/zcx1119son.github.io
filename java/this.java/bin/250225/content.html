@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>content</title>
+        <style>
+            .style1{
+                color:greenyellow;
+                background-color: blueviolet;
+            }
+            .style-size{
+                font-size: 40px;
+            }
+        </style>
+    </head>
+    
+    <body>
+      <p id="title">Hello, <span style="display: none;">Dooly</span></p>
+      <p id="textContent"></p>
+      <p id="innerText"></p>
+      <p id="innerHTML"></p>
+      <h1 id="h1">Hello, May</h1>
+      <script>
+        // console.log(document.getElementById("title").textContent);
+        // console.log(document.getElementById("title").innerText);
+        // console.log(document.getElementById("title").innerHTML);
+        document.getElementById("textContent").textContent="<strong>안녕하세요.</strong>";
+        document.getElementById("innerText").innerText="<strong>둘리</strong>";
+        document.getElementById("innerHTML").innerHTML="<strong>도우너</strong>";
+
+        const el1=document.querySelector("h1");
+        setInterval(function(){
+            el1.classList.toggle("style1");
+        }, 3000);
+        // el1.classList.add("style1");
+        // el1.classList.add("style-size");
+        // el1.style.color="white";
+        // el1.style.backgroundColor="blue";
+        // el1.style.fontSize="30px";
+      </script>
+    </body>
+</html>

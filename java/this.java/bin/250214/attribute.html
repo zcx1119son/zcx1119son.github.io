@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>기본 속성 선택자(atturibute selector)</title>
+        <style>
+            a[target="_blank"]{
+                color: plum;
+                display: block;
+            }
+            #a1[href]{
+                color: yellowgreen;
+            }
+            .c1[href]{
+                color: brown;
+            }
+        </style>
+    </head>
+    
+    <bady>
+        <a href="#">기본 a 태그</a>
+        <a href="#" target="_blank">새 창으로 열리는 a </a>
+        <a id="a1" href="#">a태그 a1 아이디</a><br>
+        <a class="c1" href="#">a태그 c1 클래스</a>
+        <h1 class="c1">h1태그 c1 클래스</h1>
+    </bady>
+</html>
